@@ -1,0 +1,16 @@
+server:
+  context-path: /auth-service
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: oauth
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+logging:
+ level:
+  org.springframework.security: DEBUG
